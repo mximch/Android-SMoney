@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:background="@color/gold"
+        android:id="@+id/search_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/img_back_bmp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:drawableLeft="@mipmap/search_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_edittext_shape"
+            android:textSize="16sp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="请选择日期"/>
+    </LinearLayout>
+
+    <com.example.mximc.smoney.adapter.ListViewCompat
+        android:id="@+id/lv_search"
+        android:layout_below="@id/search_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff4f7f9"
+        android:cacheColorHint="#00000000"
+        android:divider="#dddbdb"
+        android:dividerHeight="1.0px"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+</RelativeLayout>

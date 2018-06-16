@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <!-- 公共的返回标题栏-->
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/gold">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/img_back_bmp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

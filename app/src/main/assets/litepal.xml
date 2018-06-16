@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="SMoney" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.example.mximc.smoney.bean.CategoryBean" />
+        <mapping class="com.example.mximc.smoney.bean.CostBean" />
+    </list>
+
+</litepal>
